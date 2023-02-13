@@ -1,0 +1,36 @@
+.home-banner-container {
+    width: 595px;
+    height: 228px;
+    background-image: url('/public/assets/HomeBanner.png');
+    background-size: contain;
+    border-radius: 21px;
+}
+
+.home-banner-inner {
+    padding: 30px;
+    height: 100%;
+    padding-bottom: 20px;
+    border-radius: 21px;
+    background-color: #6F4FF280;
+}
+
+.home-banner-header {
+    width: 285px;
+    height: 78px;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.home-banner-text {
+    width: 478px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.home-banner-btn-wrapper {
+    display: flex;
+    gap: 20px;
+}
