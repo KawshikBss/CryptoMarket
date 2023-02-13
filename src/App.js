@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Route, Routes } from "react-router";
+import routes from "./routes";
+import Layout from "./layouts/Layout";
+import { Suspense } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Routes>
+                {routes.map((item, index) => {
+                    return (
+                        <Route
+                            key={index}
+                            path={item.path ? item.path : "/"}
+                            element={
+                                <Layout>
+                                    <Suspense fallback={<h1>Loading...</h1>}>
+                                        <item.component />
+                                    </Suspense>
+                                </Layout>
+                            }
+                        />
+                    );
+                })}
+            </Routes>
+        </>
+    );
 }
 
 export default App;
