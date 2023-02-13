@@ -1,0 +1,9 @@
+.button-container {
+    width: 133px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: #6F4FF2;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 40px;
+}
