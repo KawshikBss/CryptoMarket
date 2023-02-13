@@ -6,7 +6,7 @@ import {BiUserCircle, BiExit} from 'react-icons/bi'
 
 const Sidebar = () => {
   return (
-    <div className='wrapper'>
+    <div className='sidebar-wrapper'>
         <ul className='nav-link-items'>
                         <li className='nav-link-item nav-link-active'>
                             <BsBorderAll className='nav-link-icon' />
