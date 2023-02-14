@@ -1,6 +1,6 @@
 import Button from "../../components/Button/Button";
-// import '../../../public/assets/TopNft.png'
 import "./home.css";
+import Market from "../../components/Market/Market";
 
 function Home() {
     return (
@@ -47,6 +47,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <Market />
         </div>
     );
 }
