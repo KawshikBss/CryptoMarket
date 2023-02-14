@@ -1,0 +1,73 @@
+.card-container {
+    padding: 20px;
+    background-color: #1d1932;
+    width: fit-content;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-image {
+    width: 243px;
+    height: 187px;
+    border-radius: 19px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.card-section + .last {
+    margin-bottom: 0;
+}
+
+.card-auc,
+.card-bid {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #ffffff;
+}
+
+.card-bid-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card-bid-price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #6f4ff2;
+}
+
+.card-auc-time,
+.card-bid-price-final {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #6c7aa0;
+}
