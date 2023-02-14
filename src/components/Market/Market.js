@@ -1,5 +1,6 @@
 import React from 'react'
 import './market.css'
+import GridView from './GridView'
 
 const Market = ({items}) => {
   return (
@@ -12,6 +13,7 @@ const Market = ({items}) => {
                 <span className='filter'>Book</span>
             </span>
         </div>
+        <GridView />
     </div>
   )
 }
