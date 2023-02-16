@@ -24,3 +24,24 @@
     line-height: 21px;
     color: #ffffff;
 }
+
+.filter {
+    cursor: pointer;
+}
+
+.filter:hover {
+    color: #6f4ff2;
+    transition: 0.5s all ease-in-out;
+}
+
+.filter.active {
+    padding: 3px 12px;
+    border-radius: 14px;
+    background-color: #6f4ff2;
+    transition: 0.5s all ease-in-out;
+}
+
+.filter.active:hover {
+    color: #FFFFFF;
+    transition: 0.5s all ease-in-out;
+}
