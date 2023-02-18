@@ -13,15 +13,19 @@ const useWallet = () => {
             if (provider) {
                 const web3 = new Web3(provider);
                 try {
-                    if (account.length <= 0) {
+                    if (account.length > 0) {
                         const accounts = await provider.request({
                             method: "eth_requestAccounts",
                         });
                         setAccount(accounts[0]);
                     }
-                    console.log(account);
-                    const accountBalance = await web3.eth.getBalance(account);
-                    setBalance(web3.utils.fromWei(accountBalance, "ether"));
+                    if (account.length) {
+                        const accountBalance = await web3.eth.getBalance(
+                            account
+                        );
+                        console.log(accountBalance);
+                        setBalance(web3.utils.fromWei(accountBalance, "ether"));
+                    }
                 } catch (err) {
                     console.log(err);
                 }
