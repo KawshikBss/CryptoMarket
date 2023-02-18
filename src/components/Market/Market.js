@@ -45,7 +45,7 @@ const Market = ({ items }) => {
                     </span>
                 </span>
             </div>
-            <GridView />
+            <GridView items={nftList} />
         </div>
     );
 };
