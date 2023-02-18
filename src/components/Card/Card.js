@@ -5,7 +5,10 @@ import "./card.css";
 const Card = ({ item }) => {
     return (
         <div className="card-container">
-            <img src="/assets/Card.png" className="card-image" />
+            <img
+                src={`https://gateway.pinata.cloud/ipfs/${item}`}
+                className="card-image"
+            />
             <div className="card-info">
                 <span className="card-title">Liquid Wave</span>
                 <span className="card-section">
